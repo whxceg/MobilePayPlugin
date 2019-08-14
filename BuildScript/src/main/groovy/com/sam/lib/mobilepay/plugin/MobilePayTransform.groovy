@@ -80,7 +80,7 @@ class MobilePayTransform extends Transform {
                 //生成输出路径
                 def dest = outputProvider.getContentLocation(jarName + md5Name, jarInput.contentTypes, jarInput.scopes, Format.JAR)
 
-                if (jarInput.name.startsWith("com.sam.lib.mobilepay:MobilePay")) {
+                if (jarInput.name.startsWith("com.github.whxceg:MobilePay")) {
                     println("找到要修改的jar")
                     def file = ModifyPayConfigUtils.modifyJar(jarInput.file, transformInvocation.context.temporaryDir, true, payExtension)
                     FileUtils.copyFile(file, dest)
