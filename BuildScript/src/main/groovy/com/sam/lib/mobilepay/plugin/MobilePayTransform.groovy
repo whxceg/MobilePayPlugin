@@ -20,7 +20,7 @@ class MobilePayTransform extends Transform {
      */
     @Override
     String getName() {
-        return "placeholderTransform"
+        return "mobilePayTransform"
     }
     /**
      * 指定输入的类型，通过这里的设定，可以指定我们要处理的文件类型
