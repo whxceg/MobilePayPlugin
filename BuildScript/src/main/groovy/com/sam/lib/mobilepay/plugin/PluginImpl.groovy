@@ -14,8 +14,6 @@ class PluginImpl implements Plugin<Project> {
         //注册一个Transform
         def classTransform = new MobilePayTransform(project)
         android.registerTransform(classTransform)
-        project.extensions.create("mobilePay", PayExtension, project)
-
     }
 
 }
