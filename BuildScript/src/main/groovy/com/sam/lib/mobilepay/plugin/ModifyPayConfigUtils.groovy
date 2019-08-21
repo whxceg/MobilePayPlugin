@@ -60,7 +60,7 @@ class ModifyPayConfigUtils {
 
     static byte[] modifyClasses(String className, byte[] srcByteCode, PayExtension payExtension) {
         byte[] classBytesCode = null
-        if ("com/cnki/lib/mobilepay/PayConfig".endsWith(className)) {
+        if ("com/cnki/lib/mobilepay/PayConfig" == className) {
             try {
                 println("--> 开始修改class start modifying---- ${className}")
                 classBytesCode = modifyClass(srcByteCode, payExtension)
